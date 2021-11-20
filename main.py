@@ -1,6 +1,6 @@
 import connect
 from feature import get_net, show_net
-from getFeatures import get_f1,get_f2,get_f3
+# from getFeatures import get_f1,get_f2,get_f3
 import networkx
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -70,11 +70,11 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.2, rando
 
 
 # Creating the Model (Optimised)
-model = RandomForestClassifier(max_depth=2, random_state=0)
-model.fit(X_train,Y_train)
-Y_pred = model.predict(X_test)
-conf = round((r2_score(Y_test,Y_pred))*100,3)
+# model = RandomForestClassifier(max_depth=2, random_state=0)
+# model.fit(X_train,Y_train)
+# Y_pred = model.predict(X_test)
+# conf = round((r2_score(Y_test,Y_pred))*100,3)
 
-# Printing Confidence of Our Model
-print('Model Confidence : ' , conf)
-print('Confusion Matrix : \n' , confusion_matrix(Y_test, Y_pred))
+# # Printing Confidence of Our Model
+# print('Model Confidence : ' , conf)
+# print('Confusion Matrix : \n' , confusion_matrix(Y_test, Y_pred))

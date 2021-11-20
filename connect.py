@@ -18,7 +18,7 @@ def get(table_name, cols='*', where=None, modifier=None, wantrows = False):
     try:
         connection = psycopg2.connect(
         host='localhost',  # host on which the database is running
-        database='Research',  # name of the database to connect to
+        database='Test',  # name of the database to connect to
         user='postgres',  # username to connect with
         password='React123123'  # insert your password here
     )
